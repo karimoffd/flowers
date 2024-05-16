@@ -84,7 +84,7 @@ button {
 }
 
 .container {
-    max-width: 1114px
+    max-width: 1200px
 }
 
 .header-navbar-btn a {
@@ -682,8 +682,8 @@ header {
 }
 
 .header-catalog-secondary {
-    background-image: url(../imgs/catalogbackground.png);
-
+    background-image: url(../imgs/background-catalog.png);
+    padding-bottom: 100px;
     .catalog-part {
         backdrop-filter: blur(5px);
         padding: 30px;
@@ -1045,6 +1045,17 @@ header {
       left: 0;
   }
 
+
+.filter-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 306px;
+    height: fit-content;
+}
+
+
+
 .filter-checkbox-content{
     margin-top: 10px;
     position: relative;
@@ -1069,6 +1080,52 @@ header {
 }
 .filter-contents-wrapper{
     margin-top: 50px;
+}
+
+.clear-filter-button{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+.clear-filter-button:hover{
+    color: #000;
+    background-color: #43FFD2;
+    border: 1px solid #43FFD2;
+    transition: all 0.3s;
+}
+
+
+.filter-with-scroll{
+    height: 171px;
+    overflow-y: scroll;
+}
+
+.filter-contents-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    ::-webkit-scrollbar {
+        width: 2px;
+      }
+    ::-webkit-scrollbar-thumb {
+        background: #43FFD2; 
+    }      
+
+    .filter-content-cards-main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        .flower-info-card{
+            margin-right: 0px;
+        }
+    }
 }
 
 
