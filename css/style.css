@@ -833,6 +833,7 @@ textarea:focus {
   flex-direction: column;
   gap: 20px;
   width: 306px;
+  max-width: 306px;
   height: fit-content; }
 
 .filter-checkbox-content {
@@ -886,11 +887,25 @@ textarea:focus {
     width: 2px; }
   .filter-contents-wrapper ::-webkit-scrollbar-thumb {
     background: #43FFD2; }
+  .filter-contents-wrapper ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: unset; }
   .filter-contents-wrapper .filter-content-cards-main {
     display: flex;
     flex-wrap: wrap;
     gap: 40px; }
     .filter-contents-wrapper .filter-content-cards-main .flower-info-card {
       margin-right: 0px; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-thumb {
+  background: #43FFD2;
+  border-radius: 5px; }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
