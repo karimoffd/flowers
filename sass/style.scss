@@ -1051,6 +1051,7 @@ header {
     flex-direction: column;
     gap: 20px;
     width: 306px;
+    max-width: 306px;
     height: fit-content;
 }
 
@@ -1118,6 +1119,11 @@ header {
         background: #43FFD2; 
     }      
 
+    ::-webkit-scrollbar-track {
+        box-shadow: none; 
+        border-radius: unset;
+    }
+
     .filter-content-cards-main{
         display: flex;
         flex-wrap: wrap;
@@ -1129,3 +1135,16 @@ header {
 }
 
 
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+::-webkit-scrollbar-thumb {
+    background: #43FFD2; 
+    border-radius: 5px;
+}   
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey; 
+    border-radius: 10px;
+}
