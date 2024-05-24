@@ -60,8 +60,8 @@ const sliderImages = new Swiper(".slider__images .swiper-container", {
 var flowerSlider = new Swiper(".flowerSwiper", {
   slidesPerView: 4, 
   navigation: {
-    nextEl: ".flower-swiper-button-next",
-    prevEl: ".flower-swiper-button-next",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -72,3 +72,6 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
