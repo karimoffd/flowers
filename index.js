@@ -74,4 +74,12 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar-secondary").style.top = "0";
+  } else {
+    document.getElementById("navbar-secondary").style.top = "-100px";
+  }
+}
