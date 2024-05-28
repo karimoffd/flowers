@@ -1,5 +1,40 @@
 
 
+document.querySelector('.korzinka-btn').addEventListener('click', function() {
+  document.querySelector('.basket-wrapper').classList.add('open');
+});
+
+document.querySelector('.korzinka-btn').addEventListener('click', function() {
+  document.querySelector('.basket').classList.add('open');
+});
+
+
+document.querySelector('.korzinka-btn').addEventListener('click', function() {
+  document.querySelector('.bloor-background').classList.add('open');
+});
+
+document.querySelectorAll('.close').forEach(function(element) {
+  element.addEventListener('click', function() {
+    document.querySelector('.basket-wrapper').classList.remove('open');
+  });
+});
+
+document.querySelectorAll('.close').forEach(function(element) {
+  element.addEventListener('click', function() {
+    document.querySelector('.basket').classList.remove('open');
+  });
+});
+
+document.querySelectorAll('.close').forEach(function(element) {
+  element.addEventListener('click', function() {
+    document.querySelector('.bloor-background').classList.remove('open');
+  });
+});
+
+
+
+
+
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
   // ищем слайдер превью по селектору
@@ -56,9 +91,8 @@ const sliderImages = new Swiper(".slider__images .swiper-container", {
   },
 });
 
-
 var flowerSlider = new Swiper(".flowerSwiper", {
-  slidesPerView: 4, 
+  slidesPerView: 4,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -72,7 +106,6 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 
 window.onscroll = function() {scrollFunction()};
 
