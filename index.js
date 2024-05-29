@@ -1,45 +1,30 @@
-
-
-document.querySelector('.korzinka-btn').addEventListener('click', function() {
-  document.querySelector('.basket-wrapper').classList.add('open');
-});
-
-document.querySelector('.korzinka-btn').addEventListener('click', function() {
-  document.querySelector('.basket').classList.add('open');
-});
-
-
-document.querySelector('.korzinka-btn').addEventListener('click', function() {
-  document.querySelector('.bloor-background').classList.add('open');
-});
-
-document.querySelectorAll('.close').forEach(function(element) {
-  element.addEventListener('click', function() {
-    document.querySelector('.basket-wrapper').classList.remove('open');
+// Добавляем обработчики ко всем элементам с классом .korzinka-btn
+document.querySelectorAll(".korzinka-btn").forEach(function (element) {
+  element.addEventListener("click", function () {
+    document.querySelector(".basket-wrapper").classList.add("open");
+    document.querySelector(".basket").classList.add("open");
+    document.querySelector(".bloor-background").classList.add("open");
   });
 });
 
-document.querySelectorAll('.close').forEach(function(element) {
-  element.addEventListener('click', function() {
-    document.querySelector('.basket').classList.remove('open');
+// Добавляем обработчики ко всем элементам с классом .close
+document.querySelectorAll(".close").forEach(function (element) {
+  element.addEventListener("click", function () {
+    document.querySelector(".basket-wrapper").classList.remove("open");
+    document.querySelector(".basket").classList.remove("open");
+    document.querySelector(".bloor-background").classList.remove("open");
   });
 });
 
-document.querySelectorAll('.close').forEach(function(element) {
-  element.addEventListener('click', function() {
-    document.querySelector('.bloor-background').classList.remove('open');
-  });
-});
+
 
 $(function () {
-  var includes = $('[data-include]')
+  var includes = $("[data-include]");
   $.each(includes, function () {
-    var file = 'views/' + $(this).data('include') + '.html'
-    $(this).load(file)
-  })
-})
-
-
+    var file = "views/" + $(this).data("include") + ".html";
+    $(this).load(file);
+  });
+});
 
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
@@ -113,7 +98,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -122,5 +109,3 @@ function scrollFunction() {
     document.getElementById("navbar-secondary").style.top = "-100px";
   }
 }
-
-

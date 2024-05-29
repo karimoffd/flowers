@@ -1340,11 +1340,11 @@ li::marker {
   padding-top: 50px;
   padding-bottom: 100px; }
   .decoration-input-section .decoration-title {
-    color: #43FFD2;
+    color: #43ffd2;
     font-weight: bold;
     font-size: 30px; }
   .decoration-input-section .decoration-title-sm {
-    color: #43FFD2;
+    color: #43ffd2;
     font-weight: bold;
     font-size: 14px;
     margin-top: 40px; }
@@ -1368,7 +1368,7 @@ li::marker {
   .decoration-input-section .form-check-input {
     background-color: transparent;
     border: 1px solid #353535; }
-    .decoration-input-section .form-check-input:checked[type=radio] {
+    .decoration-input-section .form-check-input:checked[type="radio"] {
       border: 1px solid #fff;
       color: #fff; }
 
@@ -1426,11 +1426,11 @@ li::marker {
   padding-top: 50px;
   padding-bottom: 100px; }
   .decoration-input-section .decoration-title {
-    color: #43FFD2;
+    color: #43ffd2;
     font-weight: bold;
     font-size: 30px; }
   .decoration-input-section .decoration-title-sm {
-    color: #43FFD2;
+    color: #43ffd2;
     font-weight: bold;
     font-size: 14px;
     margin-top: 40px; }
@@ -1454,7 +1454,7 @@ li::marker {
   .decoration-input-section .form-check-input {
     background-color: transparent;
     border: 1px solid #353535; }
-    .decoration-input-section .form-check-input:checked[type=radio] {
+    .decoration-input-section .form-check-input:checked[type="radio"] {
       border: 1px solid #fff;
       color: #fff; }
   .decoration-input-section .input-content-sm {
@@ -1463,8 +1463,7 @@ li::marker {
     background-color: transparent;
     padding: 19px 0px 20px 20px;
     margin-top: 10px;
-    display: block;
-    color: #fff; }
+    display: block; }
     .decoration-input-section .input-content-sm::placeholder {
       color: #555555; }
     .decoration-input-section .input-content-sm:focus {
@@ -1507,7 +1506,8 @@ li::marker {
           padding-bottom: 10px;
           border-bottom: 1px solid #555555; }
           .basket-wrapper .basket .basket-main .basket-content .basket-title .close {
-            display: block; }
+            display: block;
+            cursor: pointer; }
             .basket-wrapper .basket .basket-main .basket-content .basket-title .close .hidden {
               display: none; }
           .basket-wrapper .basket .basket-main .basket-content .basket-title h4 {
@@ -1664,5 +1664,52 @@ li::marker {
     backdrop-filter: blur(3.9px); }
   100% {
     backdrop-filter: blur(4.3px); } }
+.success-wrapper {
+  background-image: url(../imgs/seccess-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1400px;
+  background-color: #000000; }
+  .success-wrapper .success {
+    padding-top: 200px;
+    position: relative; }
+    .success-wrapper .success .signature {
+      position: absolute;
+      bottom: -150px;
+      right: 50%; }
+    .success-wrapper .success .title p {
+      font-size: 100px;
+      font-weight: 300;
+      color: #ffffff;
+      font-family: Cormorant;
+      letter-spacing: 10px;
+      margin-bottom: 0; }
+    .success-wrapper .success .title .line {
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+      gap: 60px; }
+      .success-wrapper .success .title .line div {
+        height: 1px;
+        width: 350px;
+        background-color: #d978ac; }
+    .success-wrapper .success .info {
+      margin-top: 30px;
+      padding-left: 100px; }
+      .success-wrapper .success .info p {
+        font-size: 14px;
+        color: #ffffff;
+        margin: 0;
+        font-family: Oswald;
+        letter-spacing: 1px;
+        font-weight: 400; }
+      .success-wrapper .success .info .order-id {
+        margin-top: 20px;
+        margin-bottom: 60px; }
+      .success-wrapper .success .info a {
+        color: #43ffd2;
+        font-family: Oswald;
+        text-decoration: underline !important;
+        font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
