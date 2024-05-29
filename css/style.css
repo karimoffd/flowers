@@ -1453,6 +1453,19 @@ li::marker {
     .decoration-input-section .form-check-input:checked[type=radio] {
       border: 1px solid #fff;
       color: #fff; }
+  .decoration-input-section .input-content-sm {
+    width: 180px;
+    border: 1px solid #555555;
+    background-color: transparent;
+    padding: 19px 0px 20px 20px;
+    display: block; }
+    .decoration-input-section .input-content-sm::placeholder {
+      color: #555555; }
+    .decoration-input-section .input-content-sm:focus {
+      border: 1px solid #fff; }
+  .decoration-input-section .default-txt-decoration {
+    color: #555555;
+    font-size: 14px; }
 
 .basket-wrapper {
   z-index: 999;
@@ -1477,9 +1490,10 @@ li::marker {
     .basket-wrapper .basket .basket-main {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      gap: 100px; }
       .basket-wrapper .basket .basket-main .basket-content {
-        height: 65vh; }
+        height: auto; }
         .basket-wrapper .basket .basket-main .basket-content .basket-title {
           display: flex;
           justify-content: space-between;
@@ -1594,7 +1608,8 @@ li::marker {
 
 .basket-wrapper.open {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  z-index: 9999999999999999999; }
 
 .basket-wrapper {
   visibility: hidden;
