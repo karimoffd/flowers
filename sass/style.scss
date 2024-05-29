@@ -1803,6 +1803,23 @@ li::marker {
       color: #fff;
     }
   }
+  .input-content-sm{
+    width: 180px;
+    border: 1px solid #555555;
+    background-color: transparent;
+    padding: 19px 0px 20px 20px;
+    display: block;
+    &::placeholder{
+      color: #555555;
+    }
+    &:focus{
+      border: 1px solid #fff;
+    }
+  }
+  .default-txt-decoration{
+    color: #555555;
+    font-size: 14px;
+  }
 }
 
 
@@ -1853,8 +1870,9 @@ li::marker {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 100px;
       .basket-content {
-        height: 65vh;
+          height: auto;
         .basket-title {
           display: flex;
           justify-content: space-between;
@@ -2006,6 +2024,7 @@ li::marker {
 .basket-wrapper.open {
   opacity: 1;
   visibility: visible;
+  z-index: 9999999999999999999;
 }
 
 .basket-wrapper {
