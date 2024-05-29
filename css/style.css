@@ -1506,7 +1506,8 @@ li::marker {
           padding-bottom: 10px;
           border-bottom: 1px solid #555555; }
           .basket-wrapper .basket .basket-main .basket-content .basket-title .close {
-            display: block; }
+            display: block;
+            cursor: pointer; }
             .basket-wrapper .basket .basket-main .basket-content .basket-title .close .hidden {
               display: none; }
           .basket-wrapper .basket .basket-main .basket-content .basket-title h4 {

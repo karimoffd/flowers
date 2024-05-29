@@ -1840,6 +1840,7 @@ li::marker {
           border-bottom: 1px solid #555555;
           .close {
             display: block;
+            cursor: pointer;
             .hidden {
               display: none;
             }
