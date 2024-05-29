@@ -1463,8 +1463,7 @@ li::marker {
     background-color: transparent;
     padding: 19px 0px 20px 20px;
     margin-top: 10px;
-    display: block;
-    color: #fff; }
+    display: block; }
     .decoration-input-section .input-content-sm::placeholder {
       color: #555555; }
     .decoration-input-section .input-content-sm:focus {
