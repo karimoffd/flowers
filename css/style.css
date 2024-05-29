@@ -742,6 +742,7 @@ textarea:focus {
   position: relative;
   z-index: 111;
   padding-top: 261px;
+  overflow: hidden;
   padding-bottom: 200px; }
 
 .bg-text {
@@ -819,15 +820,18 @@ textarea:focus {
 .neon-3 {
   position: absolute;
   bottom: -70%;
-  right: 10%; }
+  right: 10%;
+  z-index: -1; }
 
 .neon-4 {
   position: absolute;
-  right: 0; }
+  right: 0;
+  z-index: -1; }
 
 .neon-5 {
   position: absolute;
-  left: 0; }
+  left: 0;
+  z-index: -1; }
 
 .filter-content {
   display: flex;
@@ -1458,7 +1462,9 @@ li::marker {
     border: 1px solid #555555;
     background-color: transparent;
     padding: 19px 0px 20px 20px;
-    display: block; }
+    margin-top: 10px;
+    display: block;
+    color: #fff; }
     .decoration-input-section .input-content-sm::placeholder {
       color: #555555; }
     .decoration-input-section .input-content-sm:focus {
