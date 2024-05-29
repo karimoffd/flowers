@@ -31,7 +31,13 @@ document.querySelectorAll('.close').forEach(function(element) {
   });
 });
 
-
+$(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = 'views/' + $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+})
 
 
 
@@ -116,3 +122,5 @@ function scrollFunction() {
     document.getElementById("navbar-secondary").style.top = "-100px";
   }
 }
+
+
